@@ -1,0 +1,5 @@
+# REQUEST
+asam_open_odd_msgs/Cod cod
+---
+# RESPONSE
+asam_open_odd_msgs/Result result
