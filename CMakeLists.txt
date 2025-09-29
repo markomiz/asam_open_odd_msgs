@@ -11,6 +11,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 
 # Collect all *.msg files from msg/ directory as RELATIVE paths
@@ -24,6 +25,7 @@ file(GLOB RELATIVE_MSG_FILES
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${RELATIVE_MSG_FILES}
   DEPENDENCIES
+    std_msgs
     geometry_msgs
     sensor_msgs
     builtin_interfaces

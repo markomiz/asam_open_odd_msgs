@@ -20,9 +20,6 @@ uint8 STATUS_STALE=2
 uint8 STATUS_INVALID=3
 uint8 status
 
-# When was this value measured/derived at source
-builtin_interfaces/Time source_stamp
-
 # Carriers (use the one matching value_type)
 bool    bool_value
 int64   int_value
